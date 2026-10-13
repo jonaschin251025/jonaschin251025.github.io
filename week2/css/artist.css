@@ -1,0 +1,32 @@
+body {
+    background-color: #D7C4A5;
+    color: #1A110B;
+    padding: 15px;
+}
+
+h1 {
+    color: #2A1A0E;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    color: #7A431D;
+}
+
+p,
+li {
+    font-size: 18px;
+    color: #1A110B;
+}
+
+.official-btn {
+    padding: 10px 20px;
+    background-color: #2A1A0E;
+    border: 5px solid #2A1A0E;
+    color: #ffaa00;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
