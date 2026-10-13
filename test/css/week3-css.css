@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Edu+QLD+Hand:wght@400..700&family=Isometra&family=Long+Cang&display=swap');
+
+body {
+    margin: auto;
+    font-family: "Isometra", serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+    background-color: #88b27c;
+    background-image: url('../images/DDM252_JonasChinMingHee_test_01_A.jpg');
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h1 {
+    font-family: "Edu QLD Hand", cursive;
+    text-align: center;
+}
+
+p {
+    font-family: "Black Ops One", system-ui;
+    margin: 10px;
+    border: 2px solid rgb(154, 90, 90);
+    border-radius: 10px 40px 10px 40px;
+    box-shadow: 5px 5px 10px rgba(255, 13, 13, 0.8);
+    padding: 20px;
+}
+
+h3 {
+    font-family: "Long Cang", cursive;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(90, 154, 101);
+    font-size: 25px
+}

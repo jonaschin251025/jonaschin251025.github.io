@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+body {
+    font-family: "Oxygen", sans-serif;
+}
+
+.container {
+    display: flex;
+    /* Use flexbox layout */
+    gap: 10px;
+    max-width: 800px;
+    /* Set a maximum width for the container */
+    margin: auto;
+    /* Center the container horizontally */
+}
+
+.projects {
+    padding: 10px;
+    flex: 1;
+}
+
+.residential-projects {
+    background-color: #FFF4A3;
+    background-image: url('../images/residential-projects.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.commercial-projects {
+    background-color: #FFC0C7;
+    background-image: url('../images/commercial-projects.jpg');
+    background-size: cover;
+    background-position: top center;
+    flex: 3;
+}
+
+.infrastructure-works {
+    background-color: #D9EEE1;
+    background-image: url('../images/infrastructure-works.jpg');
+    background-size: cover;
+    background-position: top center;
+}
