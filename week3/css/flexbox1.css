@@ -1,42 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 body {
+    background-color: #F6F5EF;
     font-family: "Oxygen", sans-serif;
 }
 
 .container {
     display: flex;
-    /* Use flexbox layout */
-    gap: 10px;
-    max-width: 800px;
-    /* Set a maximum width for the container */
+    gap: 20px;
+    max-width: 1000px;
     margin: auto;
-    /* Center the container horizontally */
+    padding: 20px;
 }
 
-.projects {
-    padding: 10px;
+.box {
     flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
 }
 
-.residential-projects {
-    background-color: #FFF4A3;
-    background-image: url('../images/residential-projects.jpg');
-    background-size: cover;
-    background-position: top center;
+.card-img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-.commercial-projects {
-    background-color: #FFC0C7;
-    background-image: url('../images/commercial-projects.jpg');
-    background-size: cover;
-    background-position: top center;
-    flex: 3;
+h2 {
+    font-size: 18px;
+    color: black;
 }
 
-.infrastructure-works {
-    background-color: #D9EEE1;
-    background-image: url('../images/infrastructure-works.jpg');
-    background-size: cover;
-    background-position: top center;
+p {
+    font-size: 14px;
+    color: gray;
 }
