@@ -3,7 +3,7 @@
 body {
     font-family: "Space Grotesk", sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 30px 100px;
 }
 
 header {
@@ -24,32 +24,42 @@ header {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 1;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 24px;
+    max-width: 480px;
 }
 
 p {
     font-size: 18px;
-    color: #505050;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 32px;
+    max-width: 450px;
 }
 
 .quote-btn {
     background-color: white;
-    color: #6c757d;
+    color: black;
     font-size: 16px;
-    font-weight: bold;
-    padding: 12px 24px;
-    border: 1px solid #6c757d;
-    border-radius: 15px;
+    font-weight: 500;
+    padding: 18px 32px;
+    border: 1px solid black;
+    border-radius: 14px;
+    cursor: pointer;
 }
 
 .consult-btn {
     background-color: black;
     color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 18px 32px;
     border: none;
-    border-radius: 15px;
+    border-radius: 14px;
+    cursor: pointer;
 }
 
 .hero-container {
@@ -67,4 +77,18 @@ p {
 
 .illustration {
     width: 100%;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.partner-logo {
+    height: 45px;
+    width: auto;
+    filter: grayscale(100%);
 }
