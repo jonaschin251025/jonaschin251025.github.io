@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+body {
+    background-color: #F6F5EF;
+    font-family: "Oxygen", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 40px;
+}
+
+.logo {
+    height: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav-links a.active {
+    color: #FF5A1F;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.phone-icon {
+    height: 18px;
+}
+
+.contact-btn {
+    background-color: #FF5A1F;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    height: 22px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.box {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 18px;
+    color: black;
+}
+
+p {
+    font-size: 14px;
+    color: gray;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nav-links,
+    .contact-btn {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .phone-container {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+}
