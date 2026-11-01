@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === ROOT VARIABLES === */
+:root {
+    --black: #000000;
+    --dark: #1C1C1C;
+    --gray-dark: #6C6C6C;
+    --gray-light: #9D9D9D;
+    --white: #FFFFFF;
+    --gold: #A78B4C;
+
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-body: "Lora", serif;
+    --font-accent: "Work Sans", sans-serif;
+
+    --radius: 8px;
+}
+
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === LAYOUT CONTAINER === */
+.container {
+    max-width: 1536px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+/* === HEADER === */
+.header {
+    background-color: transparent;
+    padding: 24px 60px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1536px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 42px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-link {
+    font-family: var(--font-accent);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--gold);
+}
+
+.order-link {
+    display: flex;
+    align-items: center;
+}
+
+.order-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* === BUTTONS === */
+.btn {
+    color: var(--white);
+    background-color: var(--dark);
+    padding: 10px 28px;
+    border: 1px solid var(--white);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-block;
+    font-family: var(--font-accent);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--black);
+}
