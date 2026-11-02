@@ -59,7 +59,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1536px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .logo {
@@ -101,7 +101,18 @@ body {
     height: 20px;
 }
 
-/* === REUSABLE COMPONENTS === */
+.menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
 .btn {
     color: var(--white);
     background-color: var(--dark);
@@ -141,7 +152,6 @@ body {
     color: var(--white);
 }
 
-/* === FOOTER SECTION === */
 .footer {
     width: 100%;
     min-height: 520px;
@@ -211,4 +221,22 @@ body {
     width: 18px;
     height: 18px;
     object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 24px 40px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .footer {
+        padding: 100px 40px;
+    }
 }
