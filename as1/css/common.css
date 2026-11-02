@@ -35,6 +35,7 @@ a {
 }
 
 button {
+    font: inherit;
     border: none;
     background: none;
     cursor: pointer;
@@ -68,7 +69,7 @@ body {
 }
 
 .logo-img {
-    height: 42px;
+    height: 50px;
     width: auto;
 }
 
@@ -223,9 +224,16 @@ body {
     object-fit: contain;
 }
 
+/* === TABLET RESPONSIVE 1024PX === */
 @media screen and (max-width: 1024px) {
     .header {
-        padding: 47.5px 40px;
+        background-color: var(--black);
+        padding: 43.5px 40px;
+    }
+
+    .logo-img {
+        height: 50px;
+        width: auto;
     }
 
     .nav {
@@ -238,5 +246,51 @@ body {
 
     .footer {
         padding: 100px 40px;
+    }
+}
+
+/* === MOBILE PAGE RESPONSIVE 640PX === */
+@media screen and (max-width: 640px) {
+    .header {
+        background-color: var(--black);
+        padding: 43.5px 20px;
+    }
+
+    .logo-img {
+        height: 50px;
+        width: auto;
+    }
+
+    .menu-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .footer {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    .footer-logo {
+        max-width: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-desc {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+
+    .social-btn {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .social-btn img {
+        width: 16px;
+        height: 16px;
     }
 }
