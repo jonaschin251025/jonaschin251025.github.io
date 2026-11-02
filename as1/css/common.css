@@ -7,6 +7,7 @@
     --gray-dark: #6C6C6C;
     --gray-light: #9D9D9D;
     --gray-nav: #A1A1A1;
+    --gray-border: #A1A1A1;
     --white: #FFFFFF;
     --gold: #A78B4C;
 
@@ -32,6 +33,14 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 /* === GLOBAL TYPOGRAPHY === */
@@ -114,4 +123,23 @@ body {
     background-color: var(--gold);
     border-color: var(--gold);
     color: var(--black);
+}
+
+.btn-outline {
+    color: var(--black);
+    background-color: transparent;
+    padding: 8px 24px;
+    border: 1px solid var(--gray-border);
+    font-family: var(--font-accent);
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    border-color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
 }
