@@ -8,7 +8,7 @@ body {
 
 .welcome {
     max-width: 1536px;
-    margin: auto;
+    margin: 0 auto;
     padding: 60px 80px 140px;
     min-height: 800px;
     display: flex;
@@ -16,8 +16,8 @@ body {
 }
 
 .welcome-text {
-    max-width: 420px;
-    margin-left: 160px;
+    max-width: 400px;
+    margin: 0;
     text-align: left;
 }
 
@@ -196,7 +196,26 @@ body {
     }
 
     .popular {
-        padding: 80px 40px;
+        padding: 80px 0;
+    }
+
+    .popular-header {
+        padding: 0 40px;
+        max-width: 540px;
+    }
+
+    .popular-title {
+        font-size: 56px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    .popular-desc {
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 480px;
+        margin: 0 auto;
     }
 
     .popular-grid {
@@ -204,15 +223,38 @@ body {
         gap: 40px;
     }
 
+    .chef-special-card {
+        order: 1;
+    }
+
+    .dessert-card {
+        order: 2;
+    }
+
+    .seasonal-card {
+        order: 3;
+    }
+
     .dessert-card,
     .chef-special-card,
     .seasonal-card {
         width: 100%;
+        text-align: center;
     }
 
     .card-img,
     .chef-special-card .card-img {
-        height: 380px;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+
+    .card-title {
+        font-size: 26px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 14px;
     }
 
     .atmosphere {
@@ -224,5 +266,17 @@ body {
 
     .atmosphere-content {
         padding: 0;
+    }
+
+    .atmosphere-title {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 2px;
+    }
+
+    .atmosphere-desc {
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
     }
 }
