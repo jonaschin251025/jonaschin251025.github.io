@@ -28,3 +28,70 @@ body {
     border-radius: 12px;
     display: block;
 }
+
+.badge {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.badge-top {
+    top: 30px;
+    right: -30px;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    width: 160px;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.arrow-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.green-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #cbfd00;
+    border-radius: 2px;
+    margin: 6px 0 8px 0;
+}
+
+.badge-bottom {
+    bottom: 30px;
+    left: -30px;
+    background-color: #cbfd00;
+    padding: 20px;
+    width: 180px;
+}
+
+.badge-bottom h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #111111;
+    line-height: 1;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #111111;
+    margin: 10px 0;
+}
+
+.badge-label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #222222;
+}
