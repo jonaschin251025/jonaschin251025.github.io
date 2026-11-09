@@ -15,6 +15,7 @@ body {
     padding: 80px 20px;
 }
 
+/* desktop responsive page */
 .image-container {
     position: relative;
     width: 100%;
@@ -94,4 +95,26 @@ body {
     font-size: 11px;
     font-weight: bold;
     color: #222222;
+}
+
+/* tablet responsive page */
+@media (max-width: 768px) {
+    .image-container {
+        max-width: 300px;
+    }
+
+    .card-image {
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .badge-top {
+        top: 30px;
+        right: -30px;
+    }
+
+    .badge-bottom {
+        bottom: 30px;
+        left: -30px;
+    }
 }
