@@ -1,41 +1,27 @@
-/* === WELCOME SECTION & BACKGROUND === */
-
-.mobile-only {
-    display: none;
-}
-
-.desktop-only {
-    display: block;
-}
-
 body {
     background-image: url('../images/romaliya-header.jpg');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 898px 916px;
+    background-size: 900px 1034px;
 }
 
 .welcome {
     max-width: 1536px;
     margin: 0 auto;
     padding: 60px 80px 140px;
-    min-height: 800px;
+    min-height: 920px;
     display: flex;
     align-items: center;
 }
 
 .welcome-text {
     max-width: 400px;
-    margin: 0;
-    text-align: left;
 }
 
 .welcome-subtitle {
-    font-family: var(--font-accent);
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 4px;
-    color: var(--white);
     display: block;
     margin-bottom: 20px;
 }
@@ -45,15 +31,12 @@ body {
     font-size: 95px;
     line-height: 114px;
     font-weight: 400;
-    color: var(--white);
     margin-bottom: 28px;
     letter-spacing: 2px;
 }
 
 .welcome-desc {
-    font-family: var(--font-body);
     font-size: 19px;
-    color: var(--white);
     line-height: 1.8;
 }
 
@@ -61,7 +44,7 @@ body {
 .popular {
     background-color: var(--white);
     color: var(--black);
-    padding: 100px 80px 140px;
+    padding: 80px 140px;
 }
 
 .popular-header {
@@ -71,26 +54,27 @@ body {
 }
 
 .popular-subtitle {
-    font-family: var(--font-body);
     font-size: 28px;
     font-style: italic;
-    color: var(--black);
+    line-height: 1;
     display: block;
     margin-bottom: 20px;
+}
+
+/*hidden on desktop and tablet*/
+.mobile-only {
+    display: none;
 }
 
 .popular-title {
     font-family: var(--font-heading);
     font-size: 64px;
     letter-spacing: 2px;
-    color: var(--black);
     margin-bottom: 20px;
 }
 
 .popular-desc {
-    font-family: var(--font-body);
     font-size: 16px;
-    color: var(--dark);
     line-height: 1.8;
 }
 
@@ -125,24 +109,20 @@ body {
     font-size: 32px;
     letter-spacing: 1.5px;
     margin-bottom: 16px;
-    color: var(--black);
 }
 
 /* === ATMOSPHERE SECTION === */
 .atmosphere {
-    width: 100%;
     height: 799px;
     background-image: url('../images/atmosphere.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
-    display: flex;
+    background-size: cover;
     padding-top: 160px;
 }
 
 .atmosphere-content {
     max-width: 1536px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 80px;
 }
@@ -151,52 +131,40 @@ body {
     font-family: var(--font-heading);
     font-size: 70px;
     letter-spacing: 2px;
-    color: var(--white);
     margin-bottom: 24px;
 }
 
 .atmosphere-desc {
-    font-family: var(--font-body);
     font-size: 19px;
-    color: var(--white);
     line-height: 1.8;
     max-width: 540px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
     body {
         background-image: none;
     }
 
     .welcome {
-        display: block;
         background-image: url('../images/romaliya-header.jpg');
         background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 100% auto;
+        background-position: top right;
+        background-size: auto 800px;
         min-height: auto;
-        padding-top: 110%;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 120px;
+        padding: 0 40px 120px;
     }
 
+    /* This margin leaves room for the picture above the text */
     .welcome-text {
-        max-width: 400px;
-        margin: 0 auto;
-        text-align: left;
+        margin: 860px auto 0;
     }
 
     .welcome-subtitle {
         font-size: 14px;
-        letter-spacing: 4px;
-        margin-bottom: 20px;
     }
 
     .welcome-title {
         font-size: 80px;
-        line-height: 114px;
-        margin-bottom: 28px;
     }
 
     .welcome-desc {
@@ -213,6 +181,11 @@ body {
         max-width: 540px;
     }
 
+    .popular-subtitle {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
     .popular-title {
         font-size: 56px;
         letter-spacing: 1px;
@@ -221,7 +194,6 @@ body {
     }
 
     .popular-desc {
-        font-size: 16px;
         line-height: 1.7;
         max-width: 480px;
         margin: 0 auto;
@@ -229,34 +201,21 @@ body {
 
     .popular-grid {
         flex-direction: column;
-        gap: 40px;
     }
 
     .chef-special-card {
-        order: 1;
-    }
-
-    .dessert-card {
-        order: 2;
-    }
-
-    .seasonal-card {
-        order: 3;
+        order: -1;
     }
 
     .dessert-card,
     .chef-special-card,
     .seasonal-card {
         width: 100%;
-        text-align: center;
     }
 
     .card-img,
     .chef-special-card .card-img {
-        width: 100%;
         height: 600px;
-        object-fit: cover;
-        margin-bottom: 24px;
     }
 
     .card-title {
@@ -280,13 +239,10 @@ body {
     .atmosphere-title {
         font-size: 56px;
         line-height: 64px;
-        letter-spacing: 2px;
     }
 
     .atmosphere-desc {
         font-size: 16px;
-        line-height: 1.8;
-        font-weight: 400;
     }
 }
 
@@ -297,45 +253,33 @@ body {
 
     .mobile-only {
         display: block;
-        font-family: var(--font-body);
         font-size: 43px;
         line-height: 1.25;
         margin-bottom: 25px;
     }
 
     .popular-divider {
-        display: block;
         width: 60px;
         height: 1px;
-        background-color: #d1d1d1;
+        background-color: var(--button-outline);
         border: none;
-        margin: 0 auto 25px auto;
+        margin: 0 auto 25px;
     }
 
     .welcome {
-        display: block;
-        background-image: url('../images/romaliya-header.jpg');
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 100% auto;
-        min-height: auto;
-        padding-top: 110%;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 80px;
+        background-size: auto 400px;
+        padding: 0 30px 80px;
     }
 
     .welcome-text {
         max-width: 100%;
-        margin: 0;
-        text-align: left;
+        margin: 430px 0 0;
     }
 
     .welcome-subtitle {
         font-size: 15px;
         letter-spacing: 3px;
         margin-bottom: 16px;
-        text-align: left;
     }
 
     .welcome-title {
@@ -343,15 +287,11 @@ body {
         line-height: 96px;
         letter-spacing: 1px;
         margin-bottom: 20px;
-        text-align: left;
     }
 
     .welcome-desc {
         font-size: 19px;
         line-height: 1.6;
-        max-width: 100%;
-        margin: 0;
-        text-align: left;
     }
 
     .popular {
@@ -366,8 +306,6 @@ body {
 
     .popular-title {
         font-size: 63px;
-        letter-spacing: 1px;
-        margin-bottom: 16px;
     }
 
     .popular-desc {
@@ -376,75 +314,39 @@ body {
         max-width: 100%;
     }
 
-    .popular-grid {
-        flex-direction: column;
-        gap: 40px;
-        padding: 0;
-    }
-
     .dessert-card,
     .chef-special-card,
     .seasonal-card {
-        width: 100%;
-        text-align: center;
-        background-color: #ffffff;
         padding-bottom: 50px;
     }
 
-    .dessert-card a,
-    .chef-special-card a,
-    .seasonal-card a,
-    .dessert-card button,
-    .chef-special-card button,
-    .seasonal-card button,
-    .popular-grid .btn {
+    .btn-outline {
         font-size: 15px;
-    }
-
-    .card-img,
-    .chef-special-card .card-img {
-        width: 100%;
-        height: 100vw;
-        object-fit: cover;
-        margin-bottom: 0;
     }
 
     .card-title {
         font-size: 22px;
-        letter-spacing: 1px;
         margin-top: 40px;
         margin-bottom: 25px;
     }
 
     .atmosphere {
-        background-image: url('../images/atmosphere.jpg');
-        background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% 280px;
-        height: auto;
         min-height: auto;
-        padding-top: 280px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 60px;
-        background-color: #000000;
+        padding: 280px 30px 60px;
     }
 
     .atmosphere-content {
-        display: block;
-        max-width: 100%;
-        margin: 0;
-        padding: 30px 0 0 0;
-        background-color: #000000;
+        padding-top: 30px;
+        background-color: var(--black);
     }
 
     .atmosphere-title {
         font-size: 50px;
         line-height: 60px;
-        letter-spacing: 2px;
         margin-bottom: 16px;
         text-align: center;
-        color: var(--white);
     }
 
     .atmosphere-desc {
@@ -452,7 +354,5 @@ body {
         line-height: 1.6;
         max-width: 100%;
         text-align: center;
-        margin: 0 auto;
-        color: var(--white);
     }
 }
