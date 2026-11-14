@@ -1,0 +1,75 @@
+body {
+    background-image: url('../images/res-header-bg.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 900px 1034px;
+}
+
+.best-table {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 60px 80px 140px;
+    min-height: 790px;
+    display: flex;
+    align-items: center;
+}
+
+.best-table-text {
+    max-width: 550px;
+}
+
+.best-table-subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+}
+
+.best-table-title {
+    font-family: var(--font-heading);
+    font-size: 95px;
+    line-height: 114px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+}
+
+.best-table-desc {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* === elegance section === */
+.elegance {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 100px 80px;
+}
+
+.elegance-title {
+    font-family: var(--font-heading);
+    font-size: 95px;
+    line-height: 114px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.elegance-grid {
+    max-width: 1536px;
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.elegance-card-1,
+.elegance-card-2,
+.elegance-card-3 {
+    width: calc((100% - 80px) / 3);
+    height: 450px;
+    object-fit: cover;
+}
+
+.elegance-card-2 {
+    height: 620px;
+}
