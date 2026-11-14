@@ -46,7 +46,9 @@ body {
     padding: 100px 80px;
 }
 
-.elegance-title {
+.elegance-title,
+.gallery-title,
+.reviews-title {
     font-family: var(--font-heading);
     font-size: 95px;
     line-height: 114px;
@@ -72,4 +74,73 @@ body {
 
 .elegance-card-2 {
     height: 620px;
+}
+
+/* === gallery section === */
+.gallery {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 110px 0 80px;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 25%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* === reviews section === */
+.reviews {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 100px 80px;
+}
+
+.reviews-grid {
+    max-width: 1536px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+}
+
+.review-card {
+    width: calc((100% - 80px) / 3);
+    width: 430px;
+    height: 340px;
+    padding: 80px 30px 70px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.reviewer-name {
+    font-family: var(--font-heading);
+    font-size: 25px;
+}
+
+.review-text {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.star-rating {
+    width: 320px;
 }
