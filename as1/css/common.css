@@ -190,7 +190,7 @@ body {
 /* === TABLET RESPONSIVE 1300PX === */
 @media screen and (max-width: 1300px) {
     .header {
-        background-color: var(--nav-bg);
+        background-color: var(--black);
         padding: 43.5px 40px;
     }
 

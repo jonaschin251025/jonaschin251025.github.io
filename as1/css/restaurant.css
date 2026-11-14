@@ -2,7 +2,7 @@ body {
     background-image: url('../images/res-header-bg.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 900px 1034px;
+    background-size: auto 904px;
 }
 
 .best-table {
@@ -143,4 +143,155 @@ body {
 
 .star-rating {
     width: 320px;
+}
+
+/* === tablet responsive 1510px === */
+@media screen and (max-width: 1510px) {
+    body {
+        background-image: none;
+    }
+
+    /* Tablet header (hamburger) starts at 1510px on this page */
+    .header {
+        padding: 43.5px 40px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .best-table {
+        background-image: url('../images/res-header-bg2.jpg');
+        background-size: cover;
+        padding: 80px 100px;
+    }
+
+    .best-table-text {
+        max-width: 450px;
+    }
+
+    .best-table-title {
+        font-size: 80px;
+    }
+
+    .best-table-desc {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .elegance-title,
+    .gallery-title,
+    .reviews-title {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .elegance-title {
+        padding: 30px 0;
+    }
+
+    .elegance,
+    .reviews {
+        padding: 80px 40px;
+    }
+
+    .elegance-grid,
+    .reviews-grid {
+        flex-direction: column;
+    }
+
+    .reviews-grid {
+        align-items: center;
+    }
+
+    .review-card {
+        width: 430px;
+        height: 430px;
+    }
+
+    .elegance-card-1,
+    .elegance-card-2,
+    .elegance-card-3 {
+        width: 520px;
+        height: auto;
+    }
+
+    .gallery-grid {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+
+    .gallery-img {
+        width: 50%;
+        height: 290px;
+    }
+}
+
+/* === mobile responsive 640px === */
+@media screen and (max-width: 640px) {
+    .header {
+        padding: 43.5px 20px;
+    }
+
+    .best-table {
+        padding: 80px 30px;
+    }
+
+    .best-table-title {
+        font-size: 84px;
+        line-height: 96px;
+    }
+
+    .best-table-desc {
+        font-size: 19px;
+        line-height: 1.6;
+    }
+
+    .elegance-title,
+    .gallery-title,
+    .reviews-title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .elegance,
+    .reviews {
+        padding: 60px 20px;
+    }
+
+    .elegance-card-1,
+    .elegance-card-2,
+    .elegance-card-3 {
+        width: 290px;
+    }
+
+    .gallery-subtitle {
+        padding: 0 20px;
+    }
+
+    .gallery-grid {
+        max-width: 100%;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .review-card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 60px 30px;
+        gap: 24px;
+    }
+
+    .star-rating {
+        width: 240px;
+    }
 }
