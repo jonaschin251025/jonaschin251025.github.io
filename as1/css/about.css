@@ -1,0 +1,118 @@
+/* === SHARED STYLES === */
+.about-hero-title,
+.philosophy-title,
+.commitment-title,
+.achievements-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.about-hero-desc,
+.culinary-desc,
+.commitment-desc,
+.achievements-desc {
+    font-size: 19px;
+    line-height: 33.3px;
+}
+
+/* === ABOUT HERO SECTION === */
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.about-hero {
+    height: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-img {
+    width: 57%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-hero-content {
+    padding: 0 6%;
+    text-align: center;
+}
+
+.about-hero-subtitle {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-hero-subtitle hr {
+    flex: 1;
+    border-top: 1px solid var(--white);
+}
+
+.about-hero-title {
+    font-size: 95px;
+    line-height: 114px;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+/* === CULINARY PHILOSOPHY SECTION === */
+.philosophy {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.philosophy-title {
+    font-size: 95px;
+    line-height: 114px;
+    margin-bottom: 50px;
+}
+
+.culinary-gallery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.culinary-img {
+    flex: 1;
+    height: 600px;
+    object-fit: cover;
+}
+
+.culinary-desc {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* === OUR COMMITMENT SECTION === */
+.commitment {
+    display: flex;
+    min-height: 760px;
+}
+
+.commitment-text {
+    width: 35%;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.commitment-title {
+    font-size: 75px;
+    line-height: 90px;
+    margin-bottom: 40px;
+}
+
+.commitment-img {
+    width: 32.5%;
+    object-fit: cover;
+}
