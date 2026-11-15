@@ -116,3 +116,53 @@
     width: 32.5%;
     object-fit: cover;
 }
+
+/* === OUR ACHIEVEMENTS SECTION === */
+.achievements {
+    background-image: url('../images/achivement-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 80px;
+    text-align: center;
+}
+
+.achievements-header {
+    max-width: 960px;
+    margin: 0 auto 60px;
+}
+
+.achievements-title {
+    font-size: 95px;
+    line-height: 114px;
+    margin-bottom: 24px;
+}
+
+.achievements-grid {
+    display: flex;
+    gap: 40px;
+}
+
+.achievement-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-number {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px;
+}
+
+.achievement-divider {
+    width: 100px;
+    border-top: 1px solid var(--white);
+    margin-bottom: 40px;
+}
+
+.achievement-badge {
+    width: 280px;
+}
