@@ -103,19 +103,12 @@ body {
     background-color: var(--black);
     padding: 12px 32px;
     border: 1px solid var(--white);
-    border-radius: 8px;
     transition: color 0.3s ease;
     display: inline-block;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 1px;
     font-weight: 500;
-}
-
-.btn:hover {
-    background-color: var(--hover-color);
-    border-color: var(--hover-color);
-    color: var(--black);
 }
 
 .btn-outline {
@@ -126,13 +119,53 @@ body {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 1px;
-    transition: color 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .btn-outline:hover {
     border-color: var(--black);
-    background-color: var(--black);
+}
+
+.btn-black,
+.btn-white,
+.btn-gold {
+    font-family: var(--font-sans);
+    padding: 12px 24px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-black {
     color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-black:hover {
+    background-color: var(--black);
+}
+
+.btn-white {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-white:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.btn-gold {
+    color: var(--white);
+    background-color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+
+.btn-gold:hover {
+    color: var(--black);
+    background-color: var(--white);
+    border-color: var(--white);
 }
 
 .footer {
