@@ -8,6 +8,8 @@
 .order-heading,
 .fav-heading,
 .signature-heading,
+.signature2-heading,
+.checkout-heading,
 .dish-heading {
     font-family: var(--font-sans);
     font-size: 15px;
@@ -19,14 +21,24 @@
 .order-title,
 .fav-title,
 .signature-title,
+.signature2-title,
+.checkout-title,
 .dish-name {
     font-family: var(--font-heading);
     font-weight: 400;
-    letter-spacing: 2px;
+}
+
+.fav-title,
+.signature-title,
+.signature2-title,
+.checkout-title {
+    font-size: 32px;
+    line-height: 38px;
 }
 
 .fav-description,
-.dish-description {
+.dish-description,
+.checkout-description {
     font-size: 19px;
     line-height: 33.3px;
 }
@@ -92,22 +104,27 @@
 
 /* === 3. signature section === */
 .signature-section {
-    padding: 80px 140px;
+    padding: 100px 140px 130px;
 }
 
-.signature-heading {
-    margin-bottom: 12px;
+.signature2-section {
+    padding: 100px 140px 80px;
 }
 
-.signature-title {
-    font-size: 56px;
-    line-height: 64px;
-    margin-bottom: 30px;
+.signature-heading,
+.signature2-heading {
+    margin-bottom: 17px;
 }
 
-.dish-list {
+.signature-title,
+.signature2-title {
+    margin-bottom: 38px;
+}
+
+.dish-list,
+.dish2-list {
     display: flex;
-    gap: 40px;
+    gap: 24px;
 }
 
 .dish-card {
@@ -122,19 +139,21 @@
 }
 
 .dish-details {
-    padding: 30px;
+    padding: 40px 30px;
+}
+
+.dish-heading {
+    margin-bottom: 18px;
 }
 
 .dish-name {
     font-size: 30px;
     line-height: 36px;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
+    margin-bottom: 20px;
 }
 
-.dish-name:hover {
-    color: var(--hover-color);
+.dish-card .dish-description {
+    max-width: 400px;
 }
 
 .dish-price {
@@ -150,7 +169,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 18px;
+    margin-top: 30px;
 }
 
 .quantity-selector {
@@ -162,8 +181,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border: 1px solid var(--nav-text);
     color: var(--white);
     font-family: var(--font-sans);
@@ -191,18 +210,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 45px 60px;
+    padding: 45px 100px;
+}
+
+.house-fav-details .dish-heading {
+    margin-bottom: 0;
 }
 
 .house-fav-details .dish-name {
-    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 70px;
 }
 
 .house-fav-details .dish-description {
-    margin-bottom: 20px;
+    max-width: 350px;
+    margin-bottom: 30px;
 }
 
 .house-fav-section .dish-buttons {
+    gap: 40px;
     margin-top: 0;
 }
 
@@ -215,4 +242,40 @@
 .house-fav-section .btn-gold:hover {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
+}
+
+/* ===2nd dish section (three cards) === */
+.dish2-list .dish-image {
+    height: 300px;
+}
+
+.dish2-list .dish-buttons {
+    flex-direction: column;
+}
+
+.dish2-list .quantity-selector {
+    width: 100%;
+}
+
+.dish2-list .quantity-number {
+    flex: 1;
+    width: auto;
+}
+
+/* ===checkout section=== */
+.checkout-section {
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.checkout-heading {
+    margin-bottom: 15px;
+}
+
+.checkout-title {
+    margin-bottom: 30px;
+}
+
+.checkout-description {
+    margin-bottom: 30px;
 }
