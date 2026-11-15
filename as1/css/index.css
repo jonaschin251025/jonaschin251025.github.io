@@ -8,7 +8,7 @@ body {
 .welcome {
     max-width: 1536px;
     margin: 0 auto;
-    padding: 60px 80px 140px;
+    padding: 0px 80px 140px;
     min-height: 920px;
     display: flex;
     align-items: center;
@@ -19,9 +19,10 @@ body {
 }
 
 .welcome-subtitle {
+    font-family: var(--font-sans);
     font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 4px;
+    line-height: 18px;
+    letter-spacing: 1.4px;
     display: block;
     margin-bottom: 20px;
 }
@@ -37,7 +38,7 @@ body {
 
 .welcome-desc {
     font-size: 19px;
-    line-height: 1.8;
+    line-height: 33.3px;
 }
 
 /* === POPULAR SECTION === */
@@ -54,9 +55,9 @@ body {
 }
 
 .popular-subtitle {
-    font-size: 28px;
+    font-size: 46px;
     font-style: italic;
-    line-height: 1;
+    line-height: 55.2px;
     display: block;
     margin-bottom: 20px;
 }
@@ -77,7 +78,8 @@ body {
 
 .popular-title {
     font-family: var(--font-heading);
-    font-size: 64px;
+    font-size: 70px;
+    line-height: 84px;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
@@ -115,7 +117,8 @@ body {
 
 .card-title {
     font-family: var(--font-heading);
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 36px;
     letter-spacing: 1.5px;
     margin-bottom: 16px;
 }
@@ -139,13 +142,14 @@ body {
 .atmosphere-title {
     font-family: var(--font-heading);
     font-size: 70px;
+    line-height: 84px;
     letter-spacing: 2px;
     margin-bottom: 24px;
 }
 
 .atmosphere-desc {
     font-size: 19px;
-    line-height: 1.8;
+    line-height: 33.3px;
     max-width: 540px;
 }
 
@@ -169,16 +173,16 @@ body {
     }
 
     .welcome-subtitle {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .welcome-title {
-        font-size: 80px;
+        font-size: 95px;
     }
 
     .welcome-desc {
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 19px;
+        line-height: 1.75;
     }
 
     .popular {
@@ -191,12 +195,12 @@ body {
     }
 
     .popular-subtitle {
-        line-height: 1.6;
+        line-height: 55.2px;
         margin-bottom: 20px;
     }
 
     .popular-title {
-        font-size: 56px;
+        font-size: 70px;
         letter-spacing: 1px;
         font-weight: 400;
         margin-bottom: 16px;
@@ -228,7 +232,7 @@ body {
     }
 
     .card-title {
-        font-size: 26px;
+        font-size: 30px;
         letter-spacing: 1px;
         font-weight: 400;
         margin-bottom: 14px;
@@ -246,12 +250,12 @@ body {
     }
 
     .atmosphere-title {
-        font-size: 56px;
-        line-height: 64px;
+        font-size: 70px;
+        line-height: 84px;
     }
 
     .atmosphere-desc {
-        font-size: 16px;
+        font-size: 19px;
     }
 }
 
@@ -263,7 +267,7 @@ body {
     .mobile-only {
         display: block;
         font-size: 43px;
-        line-height: 1.25;
+        line-height: 52px;
         margin-bottom: 25px;
     }
 
@@ -279,20 +283,20 @@ body {
 
     .welcome-subtitle {
         font-size: 15px;
-        letter-spacing: 3px;
+        letter-spacing: 1.4px;
         margin-bottom: 16px;
     }
 
     .welcome-title {
         font-size: 84px;
-        line-height: 96px;
+        line-height: 101.9px;
         letter-spacing: 1px;
         margin-bottom: 20px;
     }
 
     .welcome-desc {
         font-size: 19px;
-        line-height: 1.6;
+        line-height: 1.75;
     }
 
     .popular {
@@ -307,6 +311,7 @@ body {
 
     .popular-title {
         font-size: 63px;
+        line-height: 76.4px;
     }
 
     .popular-desc {
@@ -326,7 +331,7 @@ body {
     }
 
     .card-title {
-        font-size: 22px;
+        font-size: 30px;
         margin-top: 40px;
         margin-bottom: 25px;
     }
@@ -344,15 +349,15 @@ body {
     }
 
     .atmosphere-title {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 63px;
+        line-height: 76.4px;
         margin-bottom: 16px;
         text-align: center;
     }
 
     .atmosphere-desc {
         font-size: 19px;
-        line-height: 1.6;
+        line-height: 1.75;
         max-width: 100%;
         text-align: center;
     }
