@@ -58,6 +58,7 @@
 
 .culinary-img {
     flex: 1;
+    min-width: 0;
     height: 600px;
     object-fit: cover;
 }
@@ -133,4 +134,162 @@
 
 .achievement-badge {
     width: 280px;
+}
+
+/* === HIDDEN ON DESKTOP (tablet/mobile images) === */
+.about-hero-img-tab-mob {
+    display: none;
+}
+
+/* === tablet responsive 1300px === */
+@media screen and (max-width: 1300px) {
+
+    /* hero */
+    .header {
+        position: static;
+    }
+
+    .about-hero {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-hero-img-desktop {
+        display: none;
+    }
+
+    .about-hero-img-tab-mob {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-hero-content {
+        padding: 90px 40px;
+    }
+
+    .about-hero-content .eyebrow-heading {
+        justify-content: center;
+    }
+
+    .about-hero-content hr {
+        display: none;
+    }
+
+    .about-hero-content h1 {
+        margin-bottom: 52px;
+    }
+
+    .about-hero-content .paragraph {
+        max-width: 565px;
+        margin: 0 auto;
+    }
+
+    /* culinary philosophy */
+    .philosophy {
+        padding: 80px 0;
+    }
+
+    .culinary-gallery {
+        gap: 0;
+    }
+
+    .culinary-img {
+        height: 580px;
+    }
+
+    .philosophy .paragraph {
+        max-width: none;
+        padding: 0 14%;
+    }
+
+    /* our commitment */
+    .commitment {
+        min-height: 750px;
+        justify-content: center;
+        text-align: center;
+        background-image: url('../images/commitment-tab-mob.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .commitment-text {
+        width: 100%;
+        padding: 90px 140px;
+        align-items: center;
+    }
+
+    .commitment-img {
+        display: none;
+    }
+
+    /* our achievements */
+    .achievements {
+        padding: 140px 40px;
+    }
+
+    .achievements-grid {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .achievement-badge {
+        width: 410px;
+    }
+}
+
+/* === mobile responsive 640px === */
+@media screen and (max-width: 640px) {
+
+    .about-hero-img-tab-mob {
+        height: 300px;
+    }
+
+    .about-hero-content {
+        padding: 64px 20px;
+    }
+
+    .about-hero-content h1 {
+        margin-bottom: 40px;
+    }
+
+    .about-hero-content .paragraph {
+        max-width: 500px;
+    }
+
+    /* culinary philosophy */
+    .philosophy {
+        padding: 60px 0;
+    }
+
+    .culinary-img {
+        height: 380px;
+    }
+
+    .culinary-img-secondary {
+        display: none;
+    }
+
+    .philosophy .paragraph {
+        padding: 0 40px;
+    }
+
+    /* our commitment */
+    .commitment {
+        min-height: 490px;
+    }
+
+    .commitment-text {
+        padding: 60px 40px;
+    }
+
+    /* our achievements */
+    .achievements {
+        padding: 100px 20px;
+    }
+
+    .achievement-badge {
+        width: 225px;
+    }
 }
