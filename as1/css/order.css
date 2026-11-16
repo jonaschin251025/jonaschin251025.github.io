@@ -1,7 +1,3 @@
-/* order.css - page-specific styles only.
-   Fonts and text sizes come from common.css (h1-h5, .paragraph, .eyebrow-heading, buttons).
-   Text is targeted by its common class/tag inside its section, e.g. .fav-text h4 */
-
 .header {
     position: absolute;
     top: 0;

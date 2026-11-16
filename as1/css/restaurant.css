@@ -18,27 +18,13 @@ body {
     max-width: 550px;
 }
 
-.best-table-subtitle {
-    font-family: var(--font-sans);
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 1.4px;
+.best-table-text .eyebrow-heading {
     margin-bottom: 20px;
 }
 
-.best-table-title {
-    font-family: var(--font-heading);
-    font-size: 95px;
-    line-height: 114px;
-    font-weight: 400;
+.best-table-text h1 {
     margin-bottom: 28px;
     letter-spacing: 2px;
-}
-
-.best-table-desc {
-    font-size: 19px;
-    line-height: 33.3px;
 }
 
 /* === elegance section === */
@@ -48,13 +34,9 @@ body {
     padding: 100px 80px;
 }
 
-.elegance-title,
-.gallery-title,
-.reviews-title {
-    font-family: var(--font-heading);
-    font-size: 95px;
-    line-height: 114px;
-    font-weight: 400;
+.elegance h2,
+.gallery h2,
+.reviews h2 {
     text-align: center;
 }
 
@@ -85,8 +67,7 @@ body {
     padding: 110px 0 80px;
 }
 
-.gallery-subtitle {
-    font-size: 19px;
+.gallery .paragraph {
     text-align: center;
     margin-top: 12px;
     margin-bottom: 40px;
@@ -115,12 +96,10 @@ body {
     margin: 50px auto 0;
     display: flex;
     justify-content: center;
-
     gap: 40px;
 }
 
 .review-card {
-    width: calc((100% - 80px) / 3);
     width: 430px;
     height: 340px;
     padding: 80px 30px 70px;
@@ -132,17 +111,6 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-}
-
-.reviewer-name {
-    font-family: var(--font-heading);
-    font-size: 25px;
-    line-height: 33.3px;
-}
-
-.review-text {
-    font-size: 19px;
-    line-height: 33.3px;
 }
 
 .star-rating {
@@ -178,23 +146,7 @@ body {
         max-width: 450px;
     }
 
-    .best-table-title {
-        font-size: 95px;
-    }
-
-    .best-table-desc {
-        font-size: 19px;
-        line-height: 1.75;
-    }
-
-    .elegance-title,
-    .gallery-title,
-    .reviews-title {
-        font-size: 70px;
-        line-height: 84px;
-    }
-
-    .elegance-title {
+    .elegance h2 {
         padding: 30px 0;
     }
 
@@ -245,23 +197,6 @@ body {
         padding: 80px 30px;
     }
 
-    .best-table-title {
-        font-size: 84px;
-        line-height: 101.9px;
-    }
-
-    .best-table-desc {
-        font-size: 19px;
-        line-height: 33.3px;
-    }
-
-    .elegance-title,
-    .gallery-title,
-    .reviews-title {
-        font-size: 63px;
-        line-height: 76.4px;
-    }
-
     .elegance,
     .reviews {
         padding: 60px 20px;
@@ -273,7 +208,7 @@ body {
         width: 290px;
     }
 
-    .gallery-subtitle {
+    .gallery .paragraph {
         padding: 0 20px;
     }
 
