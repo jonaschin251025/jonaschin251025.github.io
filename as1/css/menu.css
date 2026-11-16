@@ -1,0 +1,51 @@
+/* === MENU PAGE SPECIFIC STYLES === */
+.menu-hero {
+    background-image: url("../images/menu-header-bg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-hero-content {
+    padding: 0 8%;
+}
+
+.recommendations-section {
+    display: flex;
+    gap: 40px;
+    padding: 80px 3.2%;
+    background: var(--white);
+}
+
+.recommendation-card {
+    flex: 1;
+    min-width: 0;
+    height: 540px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+.recommendation-lobster {
+    background-image: url("../images/recommend-lobster.png");
+}
+
+.recommendation-chocolate {
+    background-image: url("../images/recommend-chocolate.png");
+}
+
+.recommendation-duck {
+    background-image: url("../images/recommend-duck.png");
+}
+
+.recommendation-card h4 {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: right;
+}
