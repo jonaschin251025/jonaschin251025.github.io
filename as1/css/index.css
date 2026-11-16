@@ -18,27 +18,13 @@ body {
     max-width: 400px;
 }
 
-.welcome-subtitle {
-    font-family: var(--font-sans);
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 1.4px;
-    display: block;
+.welcome-text .eyebrow-heading {
     margin-bottom: 20px;
 }
 
-.welcome-title {
-    font-family: var(--font-heading);
-    font-size: 95px;
-    line-height: 114px;
-    font-weight: 400;
+.welcome-text h1 {
     margin-bottom: 28px;
     letter-spacing: 2px;
-}
-
-.welcome-desc {
-    font-size: 19px;
-    line-height: 33.3px;
 }
 
 /* === POPULAR SECTION === */
@@ -54,11 +40,7 @@ body {
     margin: 0 auto 80px;
 }
 
-.popular-subtitle {
-    font-size: 46px;
-    font-style: italic;
-    line-height: 55.2px;
-    display: block;
+.popular-header .section-title {
     margin-bottom: 20px;
 }
 
@@ -76,17 +58,9 @@ body {
     margin: 0 auto 25px;
 }
 
-.popular-title {
-    font-family: var(--font-heading);
-    font-size: 70px;
-    line-height: 84px;
+.popular-header h2 {
     letter-spacing: 2px;
     margin-bottom: 20px;
-}
-
-.popular-desc {
-    font-size: 16px;
-    line-height: 1.8;
 }
 
 .popular-grid {
@@ -115,10 +89,7 @@ body {
     height: 520px;
 }
 
-.card-title {
-    font-family: var(--font-heading);
-    font-size: 30px;
-    line-height: 36px;
+.popular-grid h4 {
     letter-spacing: 1.5px;
     margin-bottom: 16px;
 }
@@ -139,17 +110,12 @@ body {
     padding: 0 80px;
 }
 
-.atmosphere-title {
-    font-family: var(--font-heading);
-    font-size: 70px;
-    line-height: 84px;
+.atmosphere-content h2 {
     letter-spacing: 2px;
     margin-bottom: 24px;
 }
 
-.atmosphere-desc {
-    font-size: 19px;
-    line-height: 33.3px;
+.atmosphere-content .paragraph {
     max-width: 540px;
 }
 
@@ -172,19 +138,6 @@ body {
         margin: 860px auto 0;
     }
 
-    .welcome-subtitle {
-        font-size: 15px;
-    }
-
-    .welcome-title {
-        font-size: 95px;
-    }
-
-    .welcome-desc {
-        font-size: 19px;
-        line-height: 1.75;
-    }
-
     .popular {
         padding: 80px 0;
     }
@@ -194,20 +147,12 @@ body {
         max-width: 540px;
     }
 
-    .popular-subtitle {
-        line-height: 55.2px;
-        margin-bottom: 20px;
-    }
-
-    .popular-title {
-        font-size: 70px;
+    .popular-header h2 {
         letter-spacing: 1px;
-        font-weight: 400;
         margin-bottom: 16px;
     }
 
-    .popular-desc {
-        line-height: 1.7;
+    .popular-header .paragraph {
         max-width: 480px;
         margin: 0 auto;
     }
@@ -231,10 +176,8 @@ body {
         height: 600px;
     }
 
-    .card-title {
-        font-size: 30px;
+    .popular-grid h4 {
         letter-spacing: 1px;
-        font-weight: 400;
         margin-bottom: 14px;
     }
 
@@ -248,15 +191,6 @@ body {
     .atmosphere-content {
         padding: 0;
     }
-
-    .atmosphere-title {
-        font-size: 70px;
-        line-height: 84px;
-    }
-
-    .atmosphere-desc {
-        font-size: 19px;
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -264,10 +198,8 @@ body {
         display: none;
     }
 
-    .mobile-only {
+    .popular-header .mobile-only {
         display: block;
-        font-size: 43px;
-        line-height: 52px;
         margin-bottom: 25px;
     }
 
@@ -281,22 +213,13 @@ body {
         margin: 430px 0 0;
     }
 
-    .welcome-subtitle {
-        font-size: 15px;
-        letter-spacing: 1.4px;
+    .welcome-text .eyebrow-heading {
         margin-bottom: 16px;
     }
 
-    .welcome-title {
-        font-size: 84px;
-        line-height: 101.9px;
+    .welcome-text h1 {
         letter-spacing: 1px;
         margin-bottom: 20px;
-    }
-
-    .welcome-desc {
-        font-size: 19px;
-        line-height: 1.75;
     }
 
     .popular {
@@ -309,14 +232,7 @@ body {
         margin-bottom: 40px;
     }
 
-    .popular-title {
-        font-size: 63px;
-        line-height: 76.4px;
-    }
-
-    .popular-desc {
-        font-size: 19px;
-        line-height: 1.6;
+    .popular-header .paragraph {
         max-width: 100%;
     }
 
@@ -326,12 +242,7 @@ body {
         padding-bottom: 50px;
     }
 
-    .btn-outline {
-        font-size: 15px;
-    }
-
-    .card-title {
-        font-size: 30px;
+    .popular-grid h4 {
         margin-top: 40px;
         margin-bottom: 25px;
     }
@@ -348,16 +259,12 @@ body {
         background-color: var(--black);
     }
 
-    .atmosphere-title {
-        font-size: 63px;
-        line-height: 76.4px;
+    .atmosphere-content h2 {
         margin-bottom: 16px;
         text-align: center;
     }
 
-    .atmosphere-desc {
-        font-size: 19px;
-        line-height: 1.75;
+    .atmosphere-content .paragraph {
         max-width: 100%;
         text-align: center;
     }
