@@ -1,3 +1,7 @@
+/* order.css - page-specific styles only.
+   Fonts and text sizes come from common.css (h1-h5, .paragraph, .eyebrow-heading, buttons).
+   Text is targeted by its common class/tag inside its section, e.g. .fav-text h4 */
+
 .header {
     position: absolute;
     top: 0;
@@ -5,45 +9,7 @@
     width: 100%;
 }
 
-.order-heading,
-.fav-heading,
-.signature-heading,
-.signature2-heading,
-.checkout-heading,
-.dish-heading {
-    font-family: var(--font-sans);
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 1.4px;
-    margin-bottom: 10px;
-}
-
-.order-title,
-.fav-title,
-.signature-title,
-.signature2-title,
-.checkout-title,
-.dish-name {
-    font-family: var(--font-heading);
-    font-weight: 400;
-}
-
-.fav-title,
-.signature-title,
-.signature2-title,
-.checkout-title {
-    font-size: 32px;
-    line-height: 38px;
-}
-
-.fav-description,
-.dish-description,
-.checkout-description {
-    font-size: 19px;
-    line-height: 33.3px;
-}
-
-/* === 1. order online banner === */
+/* === HERO === */
 .order-online {
     height: 904px;
     background: url('../images/order-header-bg.png') center / cover no-repeat;
@@ -54,25 +20,20 @@
     text-align: center;
 }
 
-.order-online .order-heading {
+.order-online .eyebrow-heading {
     display: flex;
     align-items: center;
     gap: 30px;
     margin-bottom: 20px;
 }
 
-.order-heading hr {
+.order-online hr {
     width: 88px;
     border: none;
     border-top: 1px solid var(--white);
 }
 
-.order-title {
-    font-size: 95px;
-    line-height: 114px;
-}
-
-/* === 2. favourites section === */
+/* === FAVOURITES BAR === */
 .fav-section {
     background-color: var(--white);
     color: var(--black);
@@ -87,22 +48,20 @@
     max-width: 650px;
 }
 
-.fav-heading {
+.fav-text .eyebrow-heading {
     margin-bottom: 25px;
 }
 
-.fav-title {
-    font-size: 70px;
-    line-height: 84px;
+.fav-text h4 {
     margin-bottom: 35px;
 }
 
-.fav-section .view-cart-button {
+.fav-section .btn-outline {
     padding: 16px 50px;
     border-width: 2px;
 }
 
-/* === 3. signature section === */
+/* === SIGNATURE SECTIONS === */
 .signature-section {
     padding: 100px 140px 130px;
 }
@@ -111,13 +70,13 @@
     padding: 100px 140px 80px;
 }
 
-.signature-heading,
-.signature2-heading {
+.signature-section>.eyebrow-heading,
+.signature2-section>.eyebrow-heading {
     margin-bottom: 17px;
 }
 
-.signature-title,
-.signature2-title {
+.signature-section>h4,
+.signature2-section>h4 {
     margin-bottom: 38px;
 }
 
@@ -127,6 +86,7 @@
     gap: 24px;
 }
 
+/* === DISH CARD === */
 .dish-card {
     flex: 1;
     background-color: var(--nav-bg);
@@ -142,27 +102,21 @@
     padding: 40px 30px;
 }
 
-.dish-heading {
+.dish-details .eyebrow-heading {
     margin-bottom: 18px;
 }
 
-.dish-name {
-    font-size: 30px;
-    line-height: 36px;
+.dish-details h4 {
     margin-bottom: 20px;
 }
 
-.dish-card .dish-description {
+.dish-card .paragraph {
     max-width: 400px;
 }
 
-.dish-price {
-    font-family: var(--font-sans);
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 1.4px;
+.dish-details .paragraph+.eyebrow-heading {
     color: var(--hover-color);
-    margin-top: 12px;
+    margin: 12px 0 0;
 }
 
 .dish-buttons {
@@ -176,8 +130,8 @@
     display: flex;
 }
 
-.quantity-button,
-.quantity-number {
+.quantity-selector button,
+.quantity-selector span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,11 +139,9 @@
     height: 48px;
     border: 1px solid var(--nav-text);
     color: var(--white);
-    font-family: var(--font-sans);
-    font-size: 15px;
 }
 
-/* ===house favourite section=== */
+/* === HOUSE FAVOURITE === */
 .house-fav-section {
     background-color: var(--white);
     padding: 70px 140px;
@@ -202,6 +154,7 @@
 
 .house-fav-image {
     width: 44%;
+    height: 450px;
     object-fit: cover;
 }
 
@@ -213,17 +166,15 @@
     padding: 45px 100px;
 }
 
-.house-fav-details .dish-heading {
+.house-fav-details .eyebrow-heading {
     margin-bottom: 0;
 }
 
-.house-fav-details .dish-name {
-    font-size: 50px;
-    line-height: 60px;
+.house-fav-details h3 {
     margin-bottom: 70px;
 }
 
-.house-fav-details .dish-description {
+.house-fav-details .paragraph {
     max-width: 350px;
     margin-bottom: 30px;
 }
@@ -244,7 +195,7 @@
     border-color: var(--hover-color);
 }
 
-/* ===2nd dish section (three cards) === */
+/* === SIGNATURE 2 (three cards) === */
 .dish2-list .dish-image {
     height: 300px;
 }
@@ -257,25 +208,267 @@
     width: 100%;
 }
 
-.dish2-list .quantity-number {
+.dish2-list .quantity-selector span {
     flex: 1;
     width: auto;
 }
 
-/* ===checkout section=== */
+/* === CHECKOUT === */
 .checkout-section {
     padding-bottom: 120px;
     text-align: center;
 }
 
-.checkout-heading {
+.checkout-section .eyebrow-heading {
     margin-bottom: 15px;
 }
 
-.checkout-title {
+.checkout-section h4 {
     margin-bottom: 30px;
 }
 
-.checkout-description {
+.checkout-section .paragraph {
     margin-bottom: 30px;
+}
+
+/* === TABLET 1300PX === */
+@media screen and (max-width: 1300px) {
+    .header {
+        background-color: transparent;
+    }
+
+    .order-online {
+        height: 600px;
+    }
+
+    .fav-section {
+        flex-wrap: wrap;
+        padding: 120px 80px;
+    }
+
+    .signature-section {
+        padding: 80px 40px;
+    }
+
+    .signature2-section {
+        padding: 100px 80px 80px;
+    }
+
+    .checkout-section {
+        padding: 20px 40px 120px;
+    }
+
+    .dish-list {
+        gap: 20px;
+    }
+
+    .dish-image {
+        height: 380px;
+    }
+
+    .dish-details {
+        padding: 20px;
+    }
+
+    .dish-buttons {
+        gap: 16px;
+    }
+
+    .dish-card .dish-buttons {
+        flex-direction: column;
+    }
+
+    .dish-card .quantity-selector {
+        width: 100%;
+    }
+
+    .dish-card .quantity-selector span {
+        flex: 1;
+        width: auto;
+    }
+
+    .dish2-list {
+        flex-wrap: wrap;
+        gap: 40px 24px;
+    }
+
+    .dish2-list .dish-card {
+        flex: none;
+        width: calc((100% - 24px) / 2);
+    }
+
+    .dish2-list .dish-details {
+        padding: 24px 20px;
+    }
+
+    .house-fav-section {
+        padding: 70px 64px;
+    }
+
+    .house-fav-card {
+        flex-direction: column;
+    }
+
+    .house-fav-image {
+        flex: 1;
+        width: 100%;
+        height: 480px;
+    }
+
+    .house-fav-details {
+        flex: 1;
+        padding: 64px 14%;
+    }
+
+    .house-fav-details h3 {
+        margin-bottom: 0;
+    }
+
+    .house-fav-details .paragraph {
+        max-width: 500px;
+        margin: 30px 0;
+    }
+
+    .house-fav-section .dish-buttons {
+        gap: 20px 60px;
+    }
+
+    .house-fav-section .quantity-selector,
+    .house-fav-section .btn-gold {
+        width: calc((100% - 60px) / 2);
+    }
+
+    .house-fav-section .quantity-selector button,
+    .house-fav-section .quantity-selector span {
+        flex: 1;
+        width: auto;
+        height: 56px;
+    }
+
+    .house-fav-section .btn-gold {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+}
+
+/* === MOBILE 640PX === */
+@media screen and (max-width: 640px) {
+    .header {
+        background-color: var(--black);
+    }
+
+    .order-online {
+        height: 560px;
+    }
+
+    .order-online .eyebrow-heading {
+        gap: 15px;
+    }
+
+    .order-online hr {
+        width: 40px;
+    }
+
+    .order-online h2 {
+        letter-spacing: 1px;
+    }
+
+    .fav-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 40px 140px;
+    }
+
+    .signature-section {
+        padding: 100px 40px 60px;
+    }
+
+    .signature2-section,
+    .house-fav-section {
+        padding: 60px 40px;
+    }
+
+    .checkout-section {
+        padding: 20px 20px 80px;
+    }
+
+    .dish-list,
+    .dish2-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .dish2-list .dish-card {
+        width: 100%;
+    }
+
+    .dish2-list .dish-details {
+        padding: 40px 8% 50px;
+    }
+
+    .dish-image,
+    .house-fav-image {
+        height: 300px;
+    }
+
+    .dish-buttons {
+        gap: 14px;
+    }
+
+    .dish-list .dish-details {
+        padding: 40px 30px;
+    }
+
+    .dish-list .dish-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .dish-list .quantity-selector {
+        width: auto;
+    }
+
+    .dish-list .quantity-selector button,
+    .dish-list .quantity-selector span {
+        flex: none;
+        width: 48px;
+        height: 48px;
+    }
+
+    .house-fav-details {
+        padding: 60px 14% 100px;
+    }
+
+    .house-fav-details h3 {
+        margin-bottom: 25px;
+    }
+
+    .house-fav-details .paragraph {
+        max-width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .house-fav-section .dish-buttons {
+        flex-wrap: nowrap;
+        gap: 15%;
+    }
+
+    .house-fav-section .quantity-selector,
+    .house-fav-section .btn-gold {
+        flex: 1;
+        width: auto;
+    }
+
+    .house-fav-section .quantity-selector button,
+    .house-fav-section .quantity-selector span {
+        flex: 1;
+        width: auto;
+        height: 44px;
+    }
+
+    .house-fav-section .btn-gold {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
 }
