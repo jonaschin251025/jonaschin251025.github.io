@@ -76,6 +76,7 @@
 
 .commitment-text {
     width: 35%;
+    min-width: 455px;
     padding: 90px;
     display: flex;
     flex-direction: column;
@@ -88,6 +89,7 @@
 
 .commitment-img {
     width: 32.5%;
+    min-width: 0;
     object-fit: cover;
 }
 
@@ -141,8 +143,8 @@
     display: none;
 }
 
-/* === tablet responsive 1300px === */
-@media screen and (max-width: 1300px) {
+/* === tablet responsive 1024px === */
+@media screen and (max-width: 1024px) {
 
     /* hero */
     .header {
@@ -216,6 +218,7 @@
 
     .commitment-text {
         width: 100%;
+        min-width: 0;
         padding: 90px 140px;
         align-items: center;
     }
