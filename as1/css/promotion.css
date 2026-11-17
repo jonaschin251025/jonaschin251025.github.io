@@ -1,0 +1,409 @@
+/* === FEATURED PROMOTION === */
+.featured {
+    display: flex;
+    align-items: center;
+}
+
+.featured-img {
+    width: 51%;
+}
+
+.featured-content {
+    flex: 1;
+    padding: 0 80px;
+}
+
+.featured-content h1 {
+    margin: 16px 0 24px;
+}
+
+.featured-offer {
+    margin: 24px 0 32px;
+}
+
+/* === SEASONAL SPECIALS === */
+.seasonal-specials {
+    padding: 100px 80px;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.seasonal-specials hr {
+    width: 60px;
+    border: none;
+    border-top: 1px solid var(--button-outline);
+    margin: 14px auto 24px;
+}
+
+.seasonal-special-cards {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.season-card {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.season-card img {
+    width: 100%;
+    max-width: 370px;
+    border-radius: 185px;
+    margin-bottom: 28px;
+}
+
+.season-card h5 {
+    margin-bottom: 10px;
+}
+
+.season-card .paragraph {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.season-card .btn-black {
+    margin-top: auto;
+}
+
+.seasonal-specials .btn-black,
+.evening-cta .btn-black {
+    color: var(--black);
+    border: 1px solid;
+}
+
+.seasonal-specials .btn-black:hover,
+.evening-cta .btn-black:hover {
+    color: var(--white);
+}
+
+/* === ROMANTIC DINING COLLECTION === */
+.evening-remember {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.evening-banner {
+    padding: 100px 80px;
+    text-align: center;
+    color: var(--white);
+    background-image: url("../images/evening-rmb-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.evening-banner h3 {
+    margin: 10px 0 16px;
+}
+
+.evening-banner .paragraph {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.evening-collage {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 40px 60px;
+}
+
+.evening-card {
+    display: flex;
+    align-items: center;
+}
+
+.evening-card h5 {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.evening-card1 img {
+    width: 65%;
+}
+
+.evening-card2 {
+    margin-top: -20%;
+}
+
+.evening-card2 img {
+    width: 49%;
+}
+
+.evening-card3 {
+    margin-top: -10%;
+}
+
+.evening-card3 img {
+    width: 31%;
+    margin-left: 24%;
+}
+
+.evening-cta {
+    padding: 0 20px 100px;
+    text-align: center;
+}
+
+.cta-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-text hr {
+    width: 40px;
+    border: 1.3px solid;
+}
+
+
+/* === MEMBERSHIP TIER === */
+.membership {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.membership-banner {
+    padding: 100px 80px;
+    text-align: center;
+    color: var(--white);
+    background-image: url("../images/membership-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.membership-banner h3 {
+    margin-bottom: 16px;
+}
+
+.membership-banner .paragraph {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.tier-grid {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 80px 100px;
+}
+
+.tier-card {
+    flex: 1;
+    min-width: 0;
+    min-height: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 30px 30px;
+    color: var(--white);
+    background-color: var(--black);
+    background-size: cover;
+}
+
+.tier-classic {
+    background-image: url("../images/member-classic.png");
+}
+
+.tier-prestige {
+    background-image: url("../images/member-prestige.png");
+}
+
+.tier-elite {
+    background-image: url("../images/member-elite.png");
+}
+
+.tier-card h4 {
+    margin: 10px 0 20px;
+}
+
+.tier-list {
+    list-style: none;
+}
+
+.tier-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.tier-star {
+    flex: none;
+    width: 14px;
+    margin-top: 6px;
+}
+
+.tier-card .btn-white {
+    align-self: center;
+}
+
+/* === TABLET RESPONSIVE 1024PX === */
+@media screen and (max-width: 1024px) {
+    .featured {
+        flex-direction: column;
+    }
+
+    .featured-img {
+        width: 100%;
+        height: 990px;
+        object-fit: cover;
+    }
+
+    .featured-content {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 100px 20px;
+    }
+
+    .seasonal-specials {
+        padding: 120px 40px;
+    }
+
+    .seasonal-special-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .season-card {
+        flex: none;
+        width: 558px;
+        max-width: 100%;
+    }
+
+    .season-card img {
+        max-width: none;
+        border-radius: 279px;
+    }
+
+    .evening-banner,
+    .membership-banner {
+        padding: 140px 40px;
+    }
+
+    .evening-banner .paragraph,
+    .membership-banner .paragraph {
+        max-width: 570px;
+    }
+
+    .evening-card,
+    .evening-card2,
+    .evening-card3 {
+        margin: 0 0 90px;
+    }
+
+    .evening-card {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .evening-card2 {
+        flex-direction: column-reverse;
+    }
+
+    .evening-card1 img,
+    .evening-card2 img,
+    .evening-card3 img {
+        width: 572px;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .tier-grid {
+        flex-wrap: wrap;
+        gap: 90px;
+        max-width: 870px;
+        padding: 100px 40px;
+    }
+
+    .tier-card {
+        flex: none;
+        width: calc((100% - 90px) / 2);
+    }
+}
+
+/* === MOBILE RESPONSIVE 640PX === */
+@media screen and (max-width: 640px) {
+    .featured-img {
+        height: 732px;
+    }
+
+    .featured-content {
+        padding: 120px 0px;
+    }
+
+    .seasonal-specials {
+        padding: 60px 20px;
+    }
+
+    .seasonal-special-cards {
+        gap: 50px;
+    }
+
+    .evening-banner {
+        padding: 60px 20px;
+    }
+
+    .membership-banner {
+        padding: 60px 20px;
+    }
+
+    .evening-collage {
+        padding: 60px 20px 20px;
+    }
+
+    .evening-card,
+    .evening-card2,
+    .evening-card3 {
+        margin: 0 0 40px;
+    }
+
+    .evening-card {
+        gap: 16px;
+    }
+
+    .cta-text {
+        gap: 10px;
+    }
+
+    .cta-text hr {
+        width: 20px;
+    }
+
+    .tier-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 120px 20px;
+    }
+
+    .tier-card {
+        width: 409px;
+        max-width: 100%;
+        min-height: 512px;
+        justify-content: center;
+    }
+
+    .tier-card .eyebrow-heading,
+    .tier-card h4 {
+        text-align: center;
+    }
+
+    .tier-list {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .tier-card .btn-white {
+        margin-top: 40px;
+    }
+}

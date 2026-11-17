@@ -7,7 +7,6 @@
     <title>Promotion - Romaliya Restaurant</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/promotion.css">
-
 </head>
 
 <body>
@@ -18,20 +17,192 @@
                 <img src="images/romaliya-logo.png" alt="Romaliya Logo" class="logo-img">
             </a>
 
-            <nav class="nav">
+            <nav class="nav" id="mobile-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="menu.html" class="nav-link">Menu</a>
                 <a href="order.html" class="nav-link">Order</a>
-                <a href="promotion.html" class="nav-link active">Promotion</a>
+                <div class="promo-header">
+                    <a href="promotion.html" class="nav-link active">Promotion</a>
+                    <div class="submenu">
+                        <a href="promotion.html">Evening Dessert</a>
+                        <a href="promotion.html">Membership</a>
+                    </div>
+                </div>
                 <a href="about.html" class="nav-link">About Us</a>
                 <a href="restaurant.html" class="nav-link">Our Restaurant</a>
                 <img src="images/order-icon.png" alt="Order Icon" class="order-icon">
             </nav>
 
-            <button class="menu-toggle">
-                <img src="images/hamburger.png" alt="Menu Icon" class="menu-icon">
-            </button>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
         </div>
     </header>
+
+    <div class="main">
+        <!-- === FEATURED PROMOTION === -->
+        <section class="featured">
+            <img src="images/promo-header-bg.png" alt="Golden Sunset Mocktail" class="featured-img">
+
+            <div class="featured-content">
+                <p class="eyebrow-heading">FEATURED PROMOTION</p>
+                <h1>GOLDEN SUNSET MOCKTAIL</h1>
+                <p class="paragraph">
+                    A refreshing blend of tropical fruits with sparkling soda, finished with a hint of citrus.
+                </p>
+                <p class="eyebrow-heading featured-offer">Buy 1, Get 1 50% OFF</p>
+                <button class="btn-white" type="button">DISCOVER MORE</button>
+            </div>
+        </section>
+
+        <!-- === SEASONAL SPECIALS === -->
+        <section class="seasonal-specials">
+            <p class="section-title">Seasonal Specials</p>
+            <hr>
+            <h2>A TASTE OF THE SEASON</h2>
+            <p class="paragraph">
+                Experience our limited-time menu featuring fresh seasonal ingredients, carefully crafted by our chefs.
+            </p>
+
+            <div class="seasonal-special-cards">
+                <div class="season-card">
+                    <img src="images/season-special-beef.png" alt="Garlic Butter Beef Tenderloin">
+                    <h5>GARLIC BUTTER BEEF TENDERLOIN</h5>
+                    <p class="paragraph">Tender, juicy ribeye grilled to perfection.</p>
+                    <button class="btn-black" type="button">LEARN MORE</button>
+                </div>
+
+                <div class="season-card">
+                    <img src="images/season-special-steak.png" alt="Signature Ribeye Steak">
+                    <h5>SIGNATURE RIBEYE STEAK</h5>
+                    <p class="paragraph">Premium beef served with our chef's signature sauce.</p>
+                    <button class="btn-black" type="button">LEARN MORE</button>
+                </div>
+
+                <div class="season-card">
+                    <img src="images/season-special-lychee.png" alt="Pink Lychee Sparkler">
+                    <h5>PINK LYCHEE SPARKLER</h5>
+                    <p class="paragraph">A refreshing blend of berries with a delicate floral finish.</p>
+                    <button class="btn-black" type="button">LEARN MORE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- === ROMANTIC DINING COLLECTION === -->
+        <section class="evening-remember" id="evening">
+            <div class="evening-banner">
+                <p class="eyebrow-heading">Romantic Dining Collection</p>
+                <h3>AN EVENING TO REMEMBER</h3>
+                <p class="paragraph">
+                    Celebrate the season of love with a carefully crafted multi-course dinner, exquisite desserts, and
+                    a romantic atmosphere designed for unforgettable moments.
+                </p>
+            </div>
+
+            <div class="evening-collage">
+                <div class="evening-card evening-card1">
+                    <img src="images/evening-rmb-dessert.png" alt="Complimentary dessert for couples">
+                    <h5>COMPLIMENTARY DESSERT FOR COUPLES</h5>
+                </div>
+
+                <div class="evening-card evening-card2">
+                    <h5>4-COURSE SET MENU</h5>
+                    <img src="images/evening-rmb-setmenu.png" alt="4-course set menu">
+                </div>
+
+                <div class="evening-card evening-card3">
+                    <img src="images/evening-rmb-wine.png" alt="Complimentary glass of sparkling wine">
+                    <h5>COMPLIMENTARY GLASS OF SPARKLING WINE</h5>
+                </div>
+            </div>
+
+            <div class="evening-cta">
+                <div class="cta-text eyebrow-heading">
+                    <hr>
+                    <p>LIMITED TIME ONLY • RESERVE YOUR TABLE TODAY</p>
+                    <hr>
+                </div>
+                <button class="btn-black" type="button">RESERVE NOW</button>
+            </div>
+        </section>
+
+        <!-- === MEMBERSHIP TIER === -->
+        <section class="membership" id="membership">
+            <div class="membership-banner">
+                <h3>MEMBERSHIP TIER</h3>
+                <p class="paragraph">
+                    Join our VIP membership and enjoy a year of exceptional dining experiences. Members receive
+                    exclusive offers and special privileges. Discover the membership that suits your lifestyle.
+                </p>
+            </div>
+
+            <div class="tier-grid">
+                <div class="tier-card tier-classic">
+                    <div>
+                        <p class="eyebrow-heading">CLASSIC</p>
+                        <h4>SPEND RM1,000/YEAR</h4>
+                        <ul class="tier-list">
+                            <li><img src="images/member-staricon.png" class="tier-star">Birthday dessert</li>
+                            <li><img src="images/member-staricon.png" class="tier-star">Member-only promotions</li>
+                        </ul>
+                    </div>
+                    <button class="btn-white" type="button">APPLY</button>
+                </div>
+
+                <div class="tier-card tier-prestige">
+                    <div>
+                        <p class="eyebrow-heading">PRESTIGE</p>
+                        <h4>SPEND RM3,000/YEAR</h4>
+                        <ul class="tier-list">
+                            <li><img src="images/member-staricon.png" class="tier-star">10% off on weekday</li>
+                            <li><img src="images/member-staricon.png" class="tier-star">Priority table reservations</li>
+                            <li><img src="images/member-staricon.png" class="tier-star">Complimentary welcome drink</li>
+                        </ul>
+                    </div>
+                    <button class="btn-white" type="button">APPLY</button>
+                </div>
+
+                <div class="tier-card tier-elite">
+                    <div>
+                        <p class="eyebrow-heading">ELITE</p>
+                        <h4>SPEND RM5,000/YEAR</h4>
+                        <ul class="tier-list">
+                            <li><img src="images/member-staricon.png" class="tier-star">15% off on weekday</li>
+                            <li><img src="images/member-staricon.png" class="tier-star">Priority reservations</li>
+                            <li><img src="images/member-staricon.png" class="tier-star">Exclusive event invitations</li>
+                            <li><img src="images/member-staricon.png" class="tier-star">Complimentary dessert</li>
+                        </ul>
+                    </div>
+                    <button class="btn-white" type="button">APPLY</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="images/romaliya-logo.png" alt="Romaliya Logo" class="footer-logo">
+            <p class="footer-desc">
+                From the first welcome to the last bite, every detail is designed to create a<br>memorable dining
+                experience for you and your loved ones.
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/" class="social-btn" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" class="social-btn" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/" class="social-btn" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/" class="social-btn" target="_blank">
+                    <img src="images/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
 
 </html>
