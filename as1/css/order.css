@@ -227,8 +227,8 @@
     margin-bottom: 30px;
 }
 
-/* === TABLET 1300PX === */
-@media screen and (max-width: 1300px) {
+/* === TABLET 1024PX === */
+@media screen and (max-width: 1024px) {
     .header {
         background-color: transparent;
     }
@@ -239,23 +239,23 @@
 
     .fav-section {
         flex-wrap: wrap;
-        padding: 120px 80px;
+        padding: 120px 63px;
     }
 
     .signature-section {
-        padding: 80px 40px;
+        padding: 80px 32px;
     }
 
     .signature2-section {
-        padding: 100px 80px 80px;
+        padding: 100px 63px 80px;
     }
 
     .checkout-section {
-        padding: 20px 40px 120px;
+        padding: 20px 32px 120px;
     }
 
     .dish-list {
-        gap: 20px;
+        gap: 15px;
     }
 
     .dish-image {
@@ -263,7 +263,7 @@
     }
 
     .dish-details {
-        padding: 20px;
+        padding: 20px 16px;
     }
 
     .dish-buttons {
@@ -285,20 +285,20 @@
 
     .dish2-list {
         flex-wrap: wrap;
-        gap: 40px 24px;
+        gap: 40px 19px;
     }
 
     .dish2-list .dish-card {
         flex: none;
-        width: calc((100% - 24px) / 2);
+        width: calc((100% - 19px) / 2);
     }
 
     .dish2-list .dish-details {
-        padding: 24px 20px;
+        padding: 24px 16px;
     }
 
     .house-fav-section {
-        padding: 70px 64px;
+        padding: 70px 50px;
     }
 
     .house-fav-card {
@@ -321,17 +321,17 @@
     }
 
     .house-fav-details .paragraph {
-        max-width: 500px;
+        max-width: 394px;
         margin: 30px 0;
     }
 
     .house-fav-section .dish-buttons {
-        gap: 20px 60px;
+        gap: 20px 47px;
     }
 
     .house-fav-section .quantity-selector,
     .house-fav-section .btn-gold {
-        width: calc((100% - 60px) / 2);
+        width: calc((100% - 47px) / 2);
     }
 
     .house-fav-section .quantity-selector button,
