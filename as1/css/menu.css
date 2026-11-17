@@ -49,3 +49,108 @@
     background: rgba(0, 0, 0, 0.4);
     text-align: right;
 }
+
+.main-course-section {
+    display: flex;
+    background: var(--white);
+    color: var(--black);
+}
+
+.main-course-img {
+    width: 50%;
+    background-image: url("../images/main-course.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-course-content {
+    flex: 1;
+    margin: 90px;
+}
+
+.main-course-content h1 {
+    margin-bottom: 20px;
+}
+
+.course-item {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--button-outline);
+}
+
+.course-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-item .paragraph {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.dessert-banner {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/dessert-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.dessert-menu-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 8% 7%;
+    background: var(--white);
+    color: var(--black);
+}
+
+.dessert-card {
+    flex: 1;
+    min-width: 0;
+}
+
+.dessert-card-offset {
+    margin-top: 15%;
+}
+
+.dessert-card img {
+    width: 100%;
+}
+
+.dessert-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cocktail-section {
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background-image: url("../images/croctails-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.cocktail-info {
+    max-width: 45%;
+}
+
+.cocktail-line {
+    width: 50px;
+    margin: 25px 0 20px;
+    border-top: 1px solid var(--white);
+}
+
+.cocktail-button {
+    margin-top: 30px;
+    text-align: center;
+}
