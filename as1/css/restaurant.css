@@ -5,6 +5,10 @@ body {
     background-size: auto 904px;
 }
 
+.header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6));
+}
+
 .best-table {
     max-width: 1536px;
     margin: 0 auto;
@@ -123,27 +127,14 @@ body {
         background-image: none;
     }
 
-    /* Tablet header (hamburger) starts at 1510px on this page */
-    .header {
-        padding: 43.5px 40px;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
     .best-table {
         background-image: url('../images/res-header-bg2.jpg');
         background-size: cover;
-        padding: 80px 100px;
+        padding: 80px 60px 80px 120px;
     }
 
     .best-table-text {
-        max-width: 450px;
+        max-width: 560px;
     }
 
     .elegance h2 {
@@ -189,10 +180,6 @@ body {
 
 /* === mobile responsive 640px === */
 @media screen and (max-width: 640px) {
-    .header {
-        padding: 43.5px 20px;
-    }
-
     .best-table {
         padding: 80px 30px;
     }
