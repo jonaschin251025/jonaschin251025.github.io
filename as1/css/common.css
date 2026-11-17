@@ -125,7 +125,7 @@ h5 {
 }
 
 .header {
-    padding: 32px 140px;
+    padding: 32px 9%;
 }
 
 .header-container {
@@ -279,8 +279,8 @@ h5 {
     height: 18px;
 }
 
-/* === TABLET RESPONSIVE 1300PX === */
-@media screen and (max-width: 1300px) {
+/* === TABLET RESPONSIVE 1024PX === */
+@media screen and (max-width: 1024px) {
     .header {
         background-color: var(--black);
         padding: 43.5px 40px;
