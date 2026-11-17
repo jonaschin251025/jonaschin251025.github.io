@@ -91,7 +91,7 @@
 }
 
 .dessert-banner {
-    height: 350px;
+    height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,4 +153,137 @@
 .cocktail-button {
     margin-top: 30px;
     text-align: center;
+}
+
+/* === RESPONSIVE DESIGN (TABLET 1024PX) === */
+@media screen and (max-width: 1024px) {
+    .recommendations-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 90px;
+        padding: 60px 40px;
+    }
+
+    .recommendation-card {
+        flex: none;
+        width: 833px;
+        max-width: 100%;
+        height: 847px;
+    }
+
+    .main-course-section {
+        flex-direction: column;
+    }
+
+    .main-course-img {
+        width: 100%;
+        height: 1026px;
+    }
+
+    .main-course-content {
+        margin: 50px 40px;
+    }
+
+    .dessert-menu-section {
+        flex-direction: column;
+        gap: 120px;
+        padding: 120px 8% 40px;
+    }
+
+    .dessert-card {
+        display: flex;
+        flex-direction: column;
+        width: 826px;
+        max-width: 100%;
+    }
+
+    .dessert-card img {
+        height: 817px;
+        object-fit: cover;
+    }
+
+    .dessert-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .dessert-card-offset {
+        margin: 0;
+    }
+
+    .cocktail-info {
+        max-width: 70%;
+    }
+}
+
+/* === RESPONSIVE DESIGN (MOBILE 640PX) === */
+@media screen and (max-width: 640px) {
+    .menu-hero {
+        min-height: 335px;
+    }
+
+    .menu-hero-content {
+        padding: 0 20px;
+    }
+
+    .menu-hero h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .recommendations-section {
+        padding: 60px 0;
+        gap: 30px;
+    }
+
+    .recommendation-card {
+        flex: 1;
+        min-width: 100%;
+        height: 0;
+        padding-top: 100%;
+    }
+
+    .recommendation-card h4 {
+        text-align: center;
+    }
+
+    .main-course-img {
+        display: none;
+    }
+
+    .main-course-content h1 {
+        text-align: center;
+    }
+
+    .main-course-content {
+        margin: 40px 20px 60px;
+    }
+
+    .course-item {
+        padding: 25px 0;
+    }
+
+    .dessert-reverse {
+        flex-direction: column;
+    }
+
+    .dessert-card-offset {
+        flex-direction: column-reverse;
+    }
+
+    .dessert-menu-section {
+        padding: 60px 20px;
+    }
+
+    .cocktail-section {
+        padding: 60px 30% 60px 8%;
+        min-height: 790px;
+    }
+
+    .cocktail-info {
+        max-width: 100%;
+    }
+
+    .cocktail-button {
+        margin-top: 70px;
+    }
 }
